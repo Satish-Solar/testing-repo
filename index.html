@@ -52,6 +52,55 @@
         .btn:hover {
             background-color: #2980b9;
         }
+        /* New styles for additional sections */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -15px;
+        }
+        .service-item {
+            flex: 1 1 300px;
+            margin: 15px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        .testimonial {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+            font-style: italic;
+        }
+        .testimonial-author {
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form textarea {
+            min-height: 120px;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +127,60 @@
                 <li>Built with HTML and CSS</li>
                 <li>No external dependencies</li>
             </ul>
+        </section>
+
+        <!-- New Services Section -->
+        <section class="main-content">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <div class="service-icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized for speed and efficiency to provide the best user experience.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🔒</div>
+                    <h3>Secure Code</h3>
+                    <p>Built with security in mind to protect your data and privacy.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Fully responsive design works on all devices and screen sizes.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- New Testimonials Section -->
+        <section class="main-content">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"This template saved me hours of development time. It's clean, modern, and exactly what I needed for my project."</p>
+                <div class="testimonial-author">- John Doe, Web Developer</div>
+            </div>
+            <div class="testimonial">
+                <p>"I'm not a professional developer, but I was able to customize this template easily. Great starting point!"</p>
+                <div class="testimonial-author">- Jane Smith, Small Business Owner</div>
+            </div>
+        </section>
+        
+        <!-- New Contact Section -->
+        <section class="main-content">
+            <h2>Get In Touch</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>📞 Phone: (123) 456-7890</p>
+                <p>✉️ Email: info@example.com</p>
+                <p>🏢 Address: 123 Main Street, City, Country</p>
+            </div>
         </section>
     </div>
 
